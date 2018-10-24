@@ -2,6 +2,7 @@ module Spree
   class PaymentMethod::Coinbase < PaymentMethod
     preference :api_key, :string
     preference :shared_secret, :string
+    preference :redirect_host, :string
 
     def actions
       %w{capture}
