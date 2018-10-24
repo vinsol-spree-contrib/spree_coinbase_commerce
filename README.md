@@ -2,6 +2,14 @@
 
 [WIP] This gem has not been tested as Coinbase commerce api doesnot provide any sandbox environment. it would be great if someone can check and report if any issues are faced.
 
+# Demo
+-----------------------------------
+
+
+Try SpreeCoinbaseCommerce for Spree 3-4 with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-coinbase-commerce-3.4)
+
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
