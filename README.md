@@ -1,6 +1,6 @@
 # SpreeCoinbaseCommerce
 
-[WIP]
+[WIP] This gem has not been tested as Coinbase commerce api doesnot provide any sandbox environment. it would be great if someone can check and report if any issues are faced.
 
 ## Installation
 
