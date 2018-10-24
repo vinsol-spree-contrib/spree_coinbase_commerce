@@ -6,6 +6,7 @@
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
+  gem 'coinbase_commerce', github: 'vinsol/coinbase_commerce'
   gem 'spree_coinbase_commerce', github: 'vinsol-spree-contrib/spree_coinbase_commerce'
   ```
 

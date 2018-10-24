@@ -16,7 +16,7 @@ module Spree
     end
 
     def provider
-      @provider ||= CoinbaseCommerce::API.new(api_key: preferred_api_key)
+      @provider ||= CoinbaseCommerce::API.new(preferred_api_key)
     end
 
     def verify(request)
@@ -29,10 +29,11 @@ module Spree
     end
 
     def capture(amount, response_code, options)
+      return simulated_error_response('Response code not present') if response_code.blank?
       coinbase_charge = begin
         provider.charges.find(response_code)
       rescue StandardError => e
-        simulated_error_response(e.message)
+        return simulated_error_response(e.message)
       end
 
       if coinbase_charge.timeline.any? { |event| event.status == 'COMPLETED' }
